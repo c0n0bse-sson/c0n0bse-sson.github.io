@@ -1,0 +1,263 @@
+@font-face {
+  font-family: helvetica-regular;
+  src: url("../fonts/Helvetica.ttf") format("truetype");
+}
+@font-face {
+  font-family: helvetica-bold;
+  src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
+}
+body {
+  font-family: helvetica-regular;
+  background-color: #1652f0;
+  color: white;
+}
+
+#navigation-bar {
+  padding: 20px 150px;
+}
+#navigation-bar button i {
+  color: white;
+}
+#navigation-bar .navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#navigation-bar ul li {
+  padding: 0 10px;
+}
+#navigation-bar ul li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+#navigation-bar ul li .dropdown-menu .dropdown-item {
+  color: black;
+}
+#navigation-bar form .btn {
+  color: white;
+  border: 2px solid white;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 18px;
+}
+@media (max-width: 992px) {
+  #navigation-bar form {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  #navigation-bar .navbar-collapse {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  #navigation-bar {
+    padding: 20px 60px;
+  }
+}
+
+#form {
+  background-color: white;
+  width: 30%;
+  height: calc(100vh-70px);
+  padding: 0;
+  margin-top: 80px;
+}
+#form .image {
+  text-align: center;
+}
+#form .image img {
+  height: 80px;
+  width: 80px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -45px;
+}
+#form .headings {
+  color: #050f19;
+  text-align: center;
+  font-family: helvetica-regular;
+}
+#form .headings p {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 15px;
+}
+#form .headings p:nth-of-type(2) {
+  text-align: left;
+}
+#form .headings h3 {
+  margin: 0px 65px;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+#form form .form-fields {
+  border-top: 1px solid #ced6df;
+  border-bottom: 1px solid #ced6df;
+  margin: 20px 0;
+}
+#form form .form-fields div {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+#form form .form-fields div label {
+  color: #050f19;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#form form .form-fields div input {
+  width: 70%;
+  border: none;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999999;
+}
+#form form .form-fields div input:focus {
+  outline: none;
+}
+#form form .form-fields hr {
+  margin: 0;
+}
+#form form .button {
+  padding: 0 30px;
+}
+#form form .button button {
+  background-color: #1652f0;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+}
+#form form .links {
+  text-align: center;
+}
+#form form .links a {
+  font-size: 16px;
+  color: #1652f0;
+  text-decoration: none;
+}
+#form form .links span {
+  color: #9f9b99;
+  font-size: 40px;
+}
+@media (max-width: 1600px) {
+  #form {
+    width: 33%;
+  }
+}
+@media (max-width: 1400px) {
+  #form {
+    width: 37%;
+  }
+}
+@media (max-width: 1200px) {
+  #form {
+    width: 42%;
+  }
+}
+@media (max-width: 992px) {
+  #form {
+    width: 53%;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 768px) {
+  #form {
+    width: 68%;
+  }
+}
+@media (max-width: 576px) {
+  #form {
+    width: 85%;
+  }
+  #form .headings h3 {
+    margin: 0 45px;
+  }
+}
+@media (max-width: 450px) {
+  #form .headings h3 {
+    margin: 0 25px;
+    font-size: 20px;
+  }
+  #form form .form-fields div label {
+    font-size: 20px;
+  }
+  #form form .form-fields div input {
+    font-size: 16px;
+  }
+}
+
+#form .error-message {
+  padding: 30px 15px;
+  color: #050f19;
+  text-align: center;
+}
+#form .error-message h2 {
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+#form .error-message h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+#form .error-message form {
+  padding-top: 25px;
+}
+#form .error-message form label {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#form .error-message form input {
+  border: none;
+  border: 1px solid gray;
+  height: 60px;
+  width: 90%;
+}
+#form .error-message form button {
+  text-align: center;
+  background-color: #1652f0;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+
+#loading {
+  background: #fff url("../images/loader.gif") no-repeat center;
+  position: fixed;
+  z-index: 10000;
+  height: 100vh;
+  width: 100%;
+}
+
+#form .error-message div {
+  padding: 30px;
+}
+#form .error-message div a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #1652f0;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+@media (max-width: 450px) {
+  #form .error-message div {
+    padding: 30px 0;
+  }
+}
